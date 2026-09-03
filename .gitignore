@@ -1,0 +1,47 @@
+# --- OS ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.directory
+.Trash-*
+*~
+
+# --- Editory / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# --- Node / npm ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# --- Premenné prostredia (heslá, API kľúče!) ---
+.env
+.env.local
+.env.*.local
+
+# --- Build výstupy ---
+dist/
+build/
+out/
+.next/
+.cache/
+.parcel-cache/
+.vercel/
+
+# --- Logy a dočasné ---
+*.log
+logs/
+tmp/
+temp/
+
+# --- Ostatné ---
+coverage/
+.eslintcache
