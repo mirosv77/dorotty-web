@@ -1,0 +1,150 @@
+:root {
+  --ink: #182028;
+  --muted: #5a6570;
+  --line: #d9dfe0;
+  --paper: #ffffff;
+  --wash: #f2f5f4;
+  --accent: #1f6355;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.obal {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.4rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 3rem 0 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 2rem 0 0.5rem;
+}
+
+p { margin: 0 0 1rem; }
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.podnadpis {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin: 0 0 2.5rem;
+}
+
+.uvod {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 1.1rem;
+  margin: 0 0 1rem;
+}
+
+li { margin-bottom: 0.35rem; }
+
+.register {
+  background: var(--wash);
+  padding: 1.25rem 1.4rem;
+  margin: 1.5rem 0;
+}
+
+.register dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 0.5rem 1rem;
+  font-size: 0.94rem;
+}
+
+.register dt {
+  color: var(--muted);
+}
+
+.register dd {
+  margin: 0;
+}
+
+@media (max-width: 30rem) {
+  .register dl {
+    grid-template-columns: 1fr;
+    gap: 0 0;
+  }
+  .register dt { margin-top: 0.75rem; }
+  .register dt:first-child { margin-top: 0; }
+}
+
+.aplikacia {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.aplikacia p:last-child { margin-bottom: 0; }
+
+.stav {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+footer p { margin-bottom: 0.5rem; }
+
+.datum {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.spat {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.92rem;
+}
