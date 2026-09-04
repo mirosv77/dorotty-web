@@ -13,13 +13,13 @@
   <a class="spat" href="index.html">Späť na úvod</a>
 
   <h1>Ochrana osobných údajov</h1>
-  <p class="datum">Účinné od 3. septembra 2026</p>
+  <p class="datum">Účinné od 4. septembra 2026</p>
 
   <p>Tieto zásady vysvetľujú, aké údaje spracúvame na tejto webovej stránke a v našich mobilných aplikáciách, na aký účel a aké máte práva.</p>
 
   <h2>Kto sme</h2>
   <p>Prevádzkovateľom je spoločnosť Dorotty, s. r. o., so sídlom M. R. Štefánika 1066/6, 018 41 Dubnica nad Váhom, IČO 46 651 951, zapísaná v Obchodnom registri Okresného súdu Trenčín, oddiel: Sro, vložka č. 26160/R.</p>
-  <p>Vo veciach ochrany osobných údajov nás kontaktujte na <a href="mailto:info@dorotty.cloud">info@dorotty.cloud</a>.</p>
+  <p>Vo veciach ochrany osobných údajov nás kontaktujte na <a href="mailto:info@dorotty.cloud">info@dorotty.cloud</a>. Zodpovednú osobu sme neurčili, keďže nám túto povinnosť článok 37 nariadenia GDPR neukladá.</p>
 
   <h2>Webová stránka</h2>
   <p>Táto stránka nepoužíva analytické nástroje, reklamné systémy ani sledovacie súbory cookie. Nezriaďujeme na nej používateľské účty a nezbierame žiadne údaje, ktoré by ste nám sami neposlali.</p>
@@ -29,30 +29,66 @@
   <h2>Mobilné aplikácie</h2>
 
   <h3>Aktivita rýb</h3>
-  <p>DOPLNIŤ — táto časť musí presne zodpovedať tomu, čo aplikácia naozaj robí, a musí sa zhodovať s vyhlásením v sekcii Data safety v Google Play Console. Popíšte najmä:</p>
+  <p>Aplikácia Aktivita rýb predpovedá aktivitu rýb na základe solunárnej teórie a meteorologických údajov. Je navrhnutá tak, aby o používateľovi potrebovala vedieť čo najmenej: <strong>nemá používateľské účty, nevyžaduje registráciu ani prihlásenie</strong> a väčšina údajov nikdy neopustí vaše zariadenie.</p>
+
+  <p><strong>Údaje uložené vo vašom zariadení.</strong> Aplikácia si lokálne ukladá vaše nastavenia, uložené rybárske lokality (názov obce alebo vodnej plochy, prípadne súradnice), zvolený druh ryby a vzhľad aplikácie. Tieto údaje sa ukladajú výhradne do úložiska vášho telefónu, neodosielajú sa na naše servery a nemáme k nim prístup.</p>
+
+  <p><strong>Poloha zariadenia.</strong> Aplikácia môže požiadať o prístup k polohe, aby vám automaticky ponúkla predpoveď pre miesto, kde sa práve nachádzate, bez ručného vyhľadávania obce. Platí pritom:</p>
   <ul>
-    <li>či aplikácia pristupuje k polohe zariadenia, s akou presnosťou a či poloha opúšťa zariadenie,</li>
-    <li>ktoré externé služby aplikácia volá a aké údaje sa im pritom odosielajú,</li>
-    <li>čo sa ukladá do pamäte zariadenia a či to zostáva len tam,</li>
-    <li>či aplikácia obsahuje reklamu, analytiku alebo nástroje na hlásenie pádov,</li>
-    <li>či vzniká používateľský účet.</li>
+    <li>Prístup k polohe je dobrovoľný. Ak povolenie neudelíte, aplikácia je plne funkčná — lokalitu si vyberiete zo zoznamu.</li>
+    <li>Poloha sa zisťuje iba počas aktívneho používania aplikácie. Aplikácia nesleduje polohu na pozadí a nezaznamenáva históriu vášho pohybu.</li>
+    <li>Súradnice slúžia na výpočet slnečných, mesačných a solunárnych časov priamo v zariadení a na stiahnutie predpovede počasia.</li>
+    <li>Súradnice neukladáme do žiadnej našej databázy. Uložia sa len vtedy, ak si dané miesto sami vedome uložíte medzi obľúbené — a aj vtedy zostávajú v zariadení.</li>
+    <li>Povolenie môžete kedykoľvek odobrať v systéme Android: Nastavenia → Aplikácie → Aktivita rýb → Povolenia → Poloha.</li>
   </ul>
 
+  <p><strong>Externé služby.</strong> Na získanie predpovede počasia aplikácia volá rozhranie služby Open-Meteo, ktorej odosiela zemepisné súradnice zvoleného alebo aktuálneho miesta. Neodosiela pritom identifikátor vášho zariadenia ani žiadny údaj, ktorý by vás identifikoval. Servery Open-Meteo sa nachádzajú v Európskej únii. Iné externé rozhrania aplikácia nevolá; zoznam slovenských obcí je súčasťou inštalačného balíka a nevyžaduje pripojenie.</p>
+
+  <p><strong>Platby a predplatné.</strong> Časť funkcií aplikácie je alebo v budúcnosti bude spoplatnená formou jednorazového nákupu alebo predplatného. Platby spracúva výhradne Google Play. Platobné údaje, teda číslo karty a fakturačnú adresu, zadávate priamo spoločnosti Google a my sa k nim nikdy nedostaneme. Od Google Play dostávame len informáciu o tom, či je nákup platný a aktívny, spolu s technickým identifikátorom nákupu a identifikátorom produktu. V prehľadoch v Play Console vidíme súhrnné štatistiky predaja, nie totožnosť konkrétnych kupujúcich.</p>
+
+  <p><strong>Diagnostika.</strong> Na udržanie stability aplikácie môžeme spracúvať anonymizované technické údaje: model zariadenia, verziu systému Android, verziu aplikácie a technický opis pádu alebo chyby. Tieto údaje neobsahujú vaše meno ani obsah vašich uložených miest a nepoužívajú sa na profilovanie.</p>
+
+  <p><strong>Čo aplikácia nerobí.</strong> Nezobrazuje reklamy, nevytvára reklamné profily, nepredáva ani neposkytuje vaše údaje tretím stranám na marketingové účely, nečíta vaše kontakty, správy ani fotografie a nesleduje vás mimo aplikácie.</p>
+
+  <p><strong>Ako údaje vymažete.</strong> Jednotlivé uložené miesta zmažete priamo v aplikácii. Odinštalovaním aplikácie sa všetky lokálne uložené údaje z vášho zariadenia natrvalo odstránia. Údaje spojené s nákupom spravujete cez svoj účet Google.</p>
+
   <h2>Právny základ</h2>
-  <p>Údaje spracúvame na základe nášho oprávneného záujmu na prevádzke a bezpečnosti služby, na základe plnenia zmluvy, ak ide o poskytnutie funkcie, o ktorú ste požiadali, a na základe vášho súhlasu tam, kde si ho vyžiadame.</p>
+  <p>Osobné údaje spracúvame na týchto právnych základoch:</p>
+  <ul>
+    <li><strong>Plnenie zmluvy</strong> podľa článku 6 ods. 1 písm. b) nariadenia GDPR — poskytnutie funkcie, o ktorú ste požiadali, vrátane výpočtu predpovede pre zvolené miesto, spracovania nákupu a správy predplatného.</li>
+    <li><strong>Zákonná povinnosť</strong> podľa článku 6 ods. 1 písm. c) — najmä povinnosti podľa zákona č. 431/2002 Z. z. o účtovníctve a zákona č. 595/2003 Z. z. o dani z príjmov pri vystavovaní a uchovávaní účtovných dokladov.</li>
+    <li><strong>Oprávnený záujem</strong> podľa článku 6 ods. 1 písm. f) — prevádzka a bezpečnosť služby, diagnostika chýb a vybavovanie požiadaviek.</li>
+    <li><strong>Súhlas</strong> podľa článku 6 ods. 1 písm. a) tam, kde si ho vyžiadame — napríklad udelením systémového povolenia na prístup k polohe. Súhlas môžete kedykoľvek odvolať bez vplyvu na zákonnosť predchádzajúceho spracúvania.</li>
+  </ul>
+
+  <h2>Ako dlho údaje uchovávame</h2>
+  <p>Poloha sa spracúva jednorazovo a neuchováva sa. Údaje uložené v aplikácii zostávajú vo vašom zariadení, kým ich nezmažete alebo aplikáciu neodinštalujete. Účtovné doklady uchovávame desať rokov, ako nám ukladá zákon. Údaje o predplatnom uchovávame počas jeho trvania a následne po dobu premlčacích lehôt. E-mailovú korešpondenciu uchovávame do vybavenia požiadavky a následne najviac dva roky. Diagnostické údaje uchovávame najviac dvanásť mesiacov.</p>
 
   <h2>Poskytovanie údajov tretím stranám</h2>
-  <p>Osobné údaje nepredávame a neposkytujeme tretím stranám na marketingové účely. Údaje môžeme sprístupniť poskytovateľom technických služieb, ktorí ich spracúvajú v našom mene, a orgánom verejnej moci, ak nám to ukladá zákon.</p>
+  <p>Osobné údaje nepredávame a neposkytujeme tretím stranám na marketingové účely. Do styku s nimi prichádzajú len títo príjemcovia:</p>
+  <ul>
+    <li>Open-Meteo ako poskytovateľ meteorologických dát, v rozsahu súradníc zvoleného miesta.</li>
+    <li>Google Ireland Ltd. a Google LLC ako prevádzkovateľ obchodu Google Play, ktorý zabezpečuje distribúciu aplikácie, spracovanie platieb a správu predplatného.</li>
+    <li>Poskytovateľ hostingu a IT podpory našej webovej stránky.</li>
+    <li>Externý účtovník v rozsahu potrebnom na splnenie daňových a účtovných povinností.</li>
+    <li>Orgány verejnej moci, ak nám to ukladá zákon.</li>
+  </ul>
+
+  <h2>Prenos mimo Európskej únie</h2>
+  <p>Údaje spracúvame primárne v rámci Európskej únie. Ak v súvislosti so službami spoločnosti Google dôjde k prenosu do tretej krajiny, uskutočňuje sa na základe štandardných zmluvných doložiek schválených Európskou komisiou, prípadne na základe rozhodnutia o primeranosti v rámci EU–U.S. Data Privacy Framework.</p>
+
+  <h2>Bezpečnosť</h2>
+  <p>Prijali sme primerané technické a organizačné opatrenia na ochranu spracúvaných údajov. Komunikácia aplikácie aj webovej stránky s externými rozhraniami prebieha šifrovane cez protokol HTTPS. Prístup k údajom majú len osoby, ktoré ho potrebujú na plnenie svojich úloh, a sú viazané mlčanlivosťou.</p>
 
   <h2>Vaše práva</h2>
   <p>Podľa nariadenia GDPR máte právo na prístup k svojim údajom, na ich opravu alebo vymazanie, na obmedzenie spracúvania, na prenosnosť údajov a právo namietať proti spracúvaniu. Ak ste nám dali súhlas, môžete ho kedykoľvek odvolať.</p>
-  <p>Svoje práva si uplatníte na adrese <a href="mailto:info@dorotty.cloud">info@dorotty.cloud</a>. Ak nie ste s vybavením spokojní, môžete podať sťažnosť Úradu na ochranu osobných údajov Slovenskej republiky, Hraničná 12, 820 07 Bratislava.</p>
+  <p>Svoje práva si uplatníte na adrese <a href="mailto:info@dorotty.cloud">info@dorotty.cloud</a>. Na žiadosť odpovieme najneskôr do 30 dní od jej doručenia. Ak nie ste s vybavením spokojní, môžete podať sťažnosť Úradu na ochranu osobných údajov Slovenskej republiky, Hraničná 12, 820 07 Bratislava.</p>
 
   <h2>Deti</h2>
   <p>Naše služby nie sú určené deťom mladším ako 16 rokov a vedome nespracúvame ich osobné údaje.</p>
 
   <h2>Zmeny</h2>
-  <p>Tieto zásady môžeme aktualizovať. Aktuálna verzia je vždy dostupná na tejto adrese a jej účinnosť je uvedená pri nadpise.</p>
+  <p>Tieto zásady môžeme aktualizovať. Aktuálna verzia je vždy dostupná na tejto adrese a jej účinnosť je uvedená pri nadpise. Pri podstatnej zmene týkajúcej sa aplikácie na to upozorníme priamo v nej.</p>
 
   <footer>
     <p>Dorotty, s. r. o., M. R. Štefánika 1066/6, 018 41 Dubnica nad Váhom, IČO 46 651 951</p>
