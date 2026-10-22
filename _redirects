@@ -1,0 +1,4 @@
+# Modely reči pre appku GymDict: appka ich sťahuje z dorotty.cloud/modely/<súbor>, súbory sú vo vydaní
+# na GitHube (github.com/mirosv77/gymdict-modely). Presmerovanie je dočasné (302), aby sa hosting dal
+# neskôr zmeniť (napr. na Cloudflare R2) bez novej verzie appky.
+/modely/* https://github.com/mirosv77/gymdict-modely/releases/download/v1/:splat 302
