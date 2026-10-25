@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+  Znenie z 25. 10. 2026. Pripravené bez kontroly právnikom, nie je to právna rada; právnik ho môže posúdiť neskôr.
+  Text vychádza z toho, čo appka Turista 1.0.0 robí (projekt Turista: src/lib/pocasie/openmeteo.ts a vystrahy.ts,
+  src/config/mapa.ts, src/lib/offlineMapa.ts, src/lib/odkazy.ts, src/lib/tury.ts, app.json), z podmienok Open-Meteo
+  (open-meteo.com/en/terms, open-meteo.com/en/features) a zo zásad OpenFreeMap (openfreemap.org/privacy), overené 25. 10. 2026.
+  Pri zmene appky (nová služba, účet, predplatné, partnerské odkazy na ubytovanie, vlastný server) zásady upraviť.
+-->
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zásady ochrany súkromia – Turista — Dorotty, s. r. o.</title>
+<meta name="description" content="Zásady ochrany súkromia appky Turista – sprievodca po horách: bez účtu, reklám a analytiky, poloha ostáva v mobile.">
+<link rel="canonical" href="https://dorotty.cloud/turista/sukromie">
+<link rel="stylesheet" href="/styl.css">
+</head>
+<body>
+<div class="obal">
+
+  <a class="spat" href="/turista/">Späť na Turistu</a>
+
+  <h1>Zásady ochrany súkromia – Turista</h1>
+  <p class="datum">Účinné od 25. októbra 2026</p>
+
+  <p>Appku Turista – sprievodca po horách (ďalej „appka“) vydáva spoločnosť Dorotty, s. r. o. Tu sa dozviete, aké údaje appka spracúva, kam a prečo odchádzajú, ako dlho sa uchovávajú a aké máte práva.</p>
+
+  <h2>Stručne</h2>
+  <ul>
+    <li>Appka nemá účty ani prihlásenie, reklamy, analytiku ani sledovanie a neobsahuje nákupy. Nemá ani vlastný server na údaje používateľov.</li>
+    <li>Hľadanie cieľa aj výpočet trás prebiehajú <strong>priamo v mobile</strong>. Uložené túry, nastavenia a mapy trás ostávajú <strong>len v mobile</strong>, nemáme k nim prístup.</li>
+    <li><strong>Polohu</strong> appka používa len na obrazovke vlastnej navigácie „Turista offline“ a na obrazovke Bezpečnosť, nikdy nie na pozadí, a <strong>nikam ju neposiela</strong>.</li>
+    <li>Na počasie posiela službe Open-Meteo súradnice štartu a najvyššieho bodu trasy zaokrúhlené na približne 1 km – <strong>nie vašu polohu</strong>.</li>
+    <li>Mapu sťahuje zo služby OpenFreeMap a z nášho mapového servera, výstrahy SHMÚ z verejného kanála MeteoAlarm. Tieto služby dostanú len samotnú požiadavku a IP adresu zariadenia.</li>
+  </ul>
+
+  <h2>1. Kto spracúva údaje</h2>
+  <p>Prevádzkovateľom je spoločnosť <strong>Dorotty, s. r. o.</strong>, so sídlom M. R. Štefánika 1066/6, 018 41 Dubnica nad Váhom, IČO 46 651 951, zapísaná v Obchodnom registri Okresného súdu Trenčín, oddiel: Sro, vložka č. 26160/R (ďalej „my“).</p>
+  <p>Kontakt pre otázky k osobným údajom: <a href="mailto:info@dorotty.cloud">info@dorotty.cloud</a>. Zodpovednú osobu sme neurčili, keďže nám túto povinnosť článok 37 nariadenia GDPR neukladá.</p>
+
+  <h2>2. Údaje, ktoré ostávajú v mobile</h2>
+  <ul>
+    <li><strong>Poloha zariadenia (GPS):</strong> vlastná navigácia „Turista offline“ (poloha na mape, pokyny na trase, upozornenie pri zídení z trasy) a vaše súradnice na obrazovke Bezpečnosť na nadiktovanie dispečerovi. Poloha je len v pamäti mobilu, kým je niektorá z týchto obrazoviek otvorená; neukladá sa a nikam sa neposiela.</li>
+    <li><strong>Hľadaný cieľ a vypočítané trasy:</strong> výstupy, okruhy a prechody sa počítajú v mobile zo siete chodníkov, ktorá je súčasťou appky. To, čo hľadáte, sa nikam neposiela.</li>
+    <li><strong>Moje túry</strong> (cieľ, štart, dátum a čas odchodu): zoznam uložených túr. Sú v mobile, kým túru nezmažete alebo appku neodinštalujete.</li>
+    <li><strong>Pripomienka túry:</strong> ak ste upozornenia povolili, deň pred túrou o 18:00 príde upozornenie s cieľom, štartom a časom odchodu. Naplánuje ho systém mobilu, nič sa pritom neposiela cez internet; so zmazaním túry sa zruší.</li>
+    <li><strong>Mapa trasy stiahnutá do mobilu:</strong> mapa a navigácia bez signálu. Je v mobile do odinštalovania appky.</li>
+    <li><strong>Stiahnuté predpovede počasia a výstrahy:</strong> aby ste ich mali aj bez signálu. Po dni túry ich appka pri ďalšom spustení zmaže.</li>
+    <li><strong>Nastavenia</strong> (jazyk, tempo chôdze, predvolený čas odchodu, spôsob navigácie): fungovanie appky. Sú v mobile do odinštalovania appky.</li>
+  </ul>
+  <p>Tieto údaje sa neodosielajú na naše servery a nemáme k nim prístup. Odinštalovaním appky sa z mobilu natrvalo zmažú. Ak máte zapnutú zálohu mobilu (iCloud, Google), môže záloha obsahovať aj údaje appky podľa nastavení vášho mobilu.</p>
+
+  <h2>3. Čo appka posiela na internet</h2>
+  <ul>
+    <li><strong>Open-Meteo</strong> (api.open-meteo.com) – na predpoveď počasia na deň túry dostane súradnice štartu a najvyššieho bodu vybranej trasy zaokrúhlené na približne 1 km, ich nadmorskú výšku a dátum túry. Nie vašu polohu.</li>
+    <li><strong>MeteoAlarm</strong> (feeds.meteoalarm.org) – na výstrahy SHMÚ dostane len požiadavku na verejný zoznam výstrah pre Slovensko a na úplný text výstrah pre okresy na trase. Ktoré výstrahy sa týkajú trasy, appka vyberá v mobile.</li>
+    <li><strong>OpenFreeMap</strong> (tiles.openfreemap.org) a <strong>náš mapový server</strong> na Cloudflare, ktorý zdieľame s našou appkou Divočina (divocina.dorotty.cloud, mapa.divocina.dorotty.cloud) – na zobrazenie mapy a stiahnutie mapy trasy do mobilu dostanú požiadavku na časť mapy (súradnice mapových dlaždíc), ktorú si prezeráte alebo sťahujete.</li>
+  </ul>
+  <p>Ako pri každej požiadavke na internete vidí každá z týchto služieb aj IP adresu vášho zariadenia a technické údaje o pripojení (čas, typ požiadavky). Appka im neposiela identifikátor zariadenia, meno ani iný údaj, ktorý by vás identifikoval. Pri vlastnej navigácii ukazuje mapa okolie miesta, kde práve ste, takže z požiadavky na túto časť mapy sa dá odvodiť oblasť, v ktorej sa nachádzate (nie vaše presné súradnice). Komunikácia je šifrovaná (HTTPS). Kto tieto služby prevádzkuje, je v bode 8.</p>
+
+  <h2>4. Odkazy do iných appiek a na weby</h2>
+  <p>Tieto odkazy sa otvoria, až keď na ne ťuknete. Potom už údaje spracúva daná appka alebo web podľa svojich zásad, nie my.</p>
+  <ul>
+    <li><strong>Mapy.com</strong> (appka alebo web tretej strany) – navigácia po trase, „Autom na štart“ a ubytovanie na mape. Odkaz obsahuje súradnice štartu, prechodových bodov a cieľa trasy, prípadne zobrazeného miesta – nie vašu polohu. Pri „Autom na štart“ obsahuje len súradnice štartu trasy; odkiaľ cestu naplánovať, určia Mapy.com samy podľa vašich nastavení v ich appke.</li>
+    <li><strong>Google Mapy</strong> – „Verejnou dopravou“: odkaz obsahuje súradnice štartu trasy.</li>
+    <li><strong>Ubytovanie</strong> – web, telefón alebo e-mail zariadenia podľa OpenStreetMap. Za tieto odkazy nedostávame províziu.</li>
+    <li><strong>App Store a Google Play</strong> – stránka oficiálnej appky Horská záchranná služba a našej appky Inverzia. Ak Inverziu máte nainštalovanú, appka ju otvorí priamo na vyhliadke.</li>
+    <li><strong>Weby</strong> laviny.sk, hzs.sk a tanap.sk a weby zdrojov údajov uvedené v appke v časti Zdroje a licencie.</li>
+  </ul>
+  <p>Tlačidlá <strong>18&nbsp;300</strong> a <strong>112</strong> len otvoria vytáčanie v telefóne. Hovor ide cez vášho mobilného operátora, nie cez nás.</p>
+
+  <h2>5. Zdieľanie a nahlásenie chyby</h2>
+  <ul>
+    <li><strong>Poslať polohu</strong> (Bezpečnosť) a <strong>Poslať GPX</strong> (detail trasy) otvoria systémovú ponuku zdieľania. Komu a ako správu alebo súbor pošlete, rozhodujete vy, my nič nedostaneme. Správa s polohou obsahuje vaše súradnice, presnosť GPS a odkaz na miesto v Mapy.com, súbor GPX trasu so štartom a cieľom.</li>
+    <li><strong>Nahlásiť chybu v trase alebo v appke</strong> (Nastavenia) otvorí váš e-mailový program so správou na info@dorotty.cloud, v predmete je verzia appky. E-mail odošlete vy. Vašu adresu a obsah správy spracujeme len na vybavenie požiadavky.</li>
+  </ul>
+
+  <h2>6. Povolenia</h2>
+  <ul>
+    <li><strong>Poloha (len pri používaní appky):</strong> appka o ňu požiada až na obrazovke vlastnej navigácie alebo Bezpečnosť. Polohu na pozadí nepoužíva. Bez povolenia ostatné funkcie fungujú, len vlastná navigácia a súradnice v Bezpečnosti nie. Povolenie môžete kedykoľvek odobrať – na iPhone: Nastavenia → Súkromie a bezpečnosť → Polohové služby → Turista; v systéme Android: Nastavenia → Aplikácie → Turista → Povolenia → Poloha.</li>
+    <li><strong>Upozornenia:</strong> pripomienka uloženej túry. Appka o ne požiada pri uložení túry; bez nich sa túra uloží, len bez pripomienky. Vypnete ich v nastaveniach mobilu.</li>
+    <li><strong>Vibrácia:</strong> upozornenie pri vlastnej navigácii, keď zídete z trasy.</li>
+    <li><strong>Internet:</strong> mapa, počasie a výstrahy (bod 3).</li>
+  </ul>
+
+  <h2>7. Právny základ</h2>
+  <ul>
+    <li><strong>Plnenie zmluvy</strong> (čl. 6 ods. 1 písm. b) GDPR) – funkcie, o ktoré požiadate: počasie a výstrahy pre vybranú trasu, mapa, navigácia a pripomienka túry.</li>
+    <li><strong>Súhlas</strong> (čl. 6 ods. 1 písm. a) GDPR) – poloha zariadenia, ktorú povolíte systémovým povolením. Súhlas môžete kedykoľvek odvolať v nastaveniach mobilu bez vplyvu na zákonnosť predchádzajúceho spracúvania.</li>
+    <li><strong>Oprávnený záujem</strong> (čl. 6 ods. 1 písm. f) GDPR) – prevádzka a bezpečnosť mapového servera a vybavenie vašich e-mailov.</li>
+  </ul>
+
+  <h2>8. Komu sa údaje dostanú a prenos mimo EÚ</h2>
+  <p>Údaje nepredávame a neposkytujeme ich na marketingové účely. V rozsahu opísanom v bodoch 3 a 4 sa dostanú k týmto poskytovateľom:</p>
+  <ul>
+    <li><strong>Cloudflare, Inc.</strong> (USA) – pre nás ako sprostredkovateľ prevádzkuje mapový server a túto webovú stránku. Dostane len požiadavku na časť mapy alebo na stránku, bez cookies a bez sledovania návštevníkov. Prenos do USA prebieha na základe rozhodnutia o primeranosti v rámci EU–U.S. Data Privacy Framework alebo štandardných zmluvných doložiek v zmluve o spracúvaní.</li>
+    <li><strong>Open-Meteo</strong> – prevádzkuje ho OpenMeteo GmbH so sídlom vo Švajčiarsku, ktoré má podľa rozhodnutia Európskej komisie primeranú úroveň ochrany údajov; podľa svojho webu má servery v Európe a v Severnej Amerike. Je to služba tretej strany, ktorá údaje spracúva podľa <a href="https://open-meteo.com/en/terms">vlastných podmienok</a>. Podľa nich môže na prevádzku a ochranu pred zneužitím uchovávať záznamy požiadaviek vrátane IP adresy a súradníc najviac 90 dní.</li>
+    <li><strong>OpenFreeMap</strong> – prevádzkuje ho Hyperknot Software Kft. (Maďarsko) podľa <a href="https://openfreemap.org/privacy/">vlastných zásad</a>: nepoužíva cookies, IP adresy neukladá do záznamov o prístupe, záznamy servera maže po 7 dňoch (pri bezpečnostnom incidente najneskôr po 30 dňoch) a na doručovanie môže využívať sieť Cloudflare.</li>
+    <li><strong>MeteoAlarm</strong> – služba EUMETNET, združenia európskych národných meteorologických služieb.</li>
+    <li><strong>Apple a Google</strong> – App Store a Google Play zabezpečujú inštaláciu a aktualizácie appky a údaje pri tom spracúvajú ako samostatní prevádzkovatelia podľa svojich zásad. Ak v mobile povolíte zdieľanie analytiky alebo diagnostiky s vývojármi, môžu nám poskytnúť súhrnné štatistiky a hlásenia o pádoch appky bez vašej identifikácie.</li>
+  </ul>
+
+  <h2>9. Ako dlho údaje uchovávame</h2>
+  <ul>
+    <li><strong>Údaje v mobile</strong> (bod 2): kým ich nezmažete v appke alebo appku neodinštalujete. Polohu appka neukladá vôbec.</li>
+    <li><strong>E-maily:</strong> do vybavenia požiadavky a potom najviac dva roky.</li>
+    <li><strong>Technické údaje u poskytovateľov služieb</strong> (bod 3): podľa ich zásad, napríklad Open-Meteo najviac 90 dní a OpenFreeMap spravidla 7 dní. Technické údaje z nášho mapového servera nepoužívame na vašu identifikáciu.</li>
+  </ul>
+
+  <h2>10. Vaše práva</h2>
+  <p>Máte právo na prístup k údajom, ich opravu, vymazanie, obmedzenie spracúvania, prenosnosť, právo namietať proti spracúvaniu na základe oprávneného záujmu a kedykoľvek odvolať súhlas (povolenie polohy vypnete v nastaveniach mobilu). Údaje z appky sú len vo vašom mobile, preto ich nemáme a nevieme ich poskytnúť ani vymazať – zmažete ich sami v appke alebo odinštalovaním appky. Žiadosť alebo otázku pošlite na <a href="mailto:info@dorotty.cloud">info@dorotty.cloud</a>, odpovieme najneskôr do 30 dní.</p>
+  <p>Ak si myslíte, že údaje spracúvame v rozpore so zákonom, môžete podať návrh na <strong>Úrad na ochranu osobných údajov Slovenskej republiky</strong>, Hraničná 12, 820 07 Bratislava, <a href="https://dataprotection.gov.sk">dataprotection.gov.sk</a>.</p>
+
+  <h2>11. Deti</h2>
+  <p>Appka nie je určená deťom mladším ako 16 rokov a vedome nespracúvame ich osobné údaje.</p>
+
+  <h2>12. Zmeny</h2>
+  <p>Zásady môžeme upraviť, napríklad pri nových funkciách. Aktuálne znenie je vždy na tejto adrese a jeho účinnosť je uvedená pri nadpise. O podstatných zmenách vás vopred upozorníme v appke.</p>
+
+  <footer>
+    <p>Dorotty, s. r. o., M. R. Štefánika 1066/6, 018 41 Dubnica nad Váhom, IČO 46 651 951</p>
+    <p>Obchodný register Okresného súdu Trenčín, oddiel: Sro, vložka č. 26160/R</p>
+  </footer>
+
+</div>
+</body>
+</html>
