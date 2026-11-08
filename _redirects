@@ -1,4 +1,7 @@
-# Modely reči pre appku GymDict: appka ich sťahuje z dorotty.cloud/modely/<súbor>, súbory sú vo vydaní
-# na GitHube (github.com/mirosv77/gymdict-modely). Presmerovanie je dočasné (302), aby sa hosting dal
-# neskôr zmeniť (napr. na Cloudflare R2) bez novej verzie appky.
+# Modely reči pre appku GymDict: appka ich sťahuje z dorotty.cloud/modely/<súbor>. Presmerovanie je dočasné (302),
+# aby sa hosting dal zmeniť bez novej verzie appky. Od 8. 11. 2026 (výpadok GitHubu pre neprihlásených) sú hlavný
+# model a detekcia reči v Cloudflare R2 (modely.dorotty.cloud). Ostatné modely sú zatiaľ vo vydaní na GitHube
+# (github.com/mirosv77/gymdict-modely), kým sa v R2 neuvoľní miesto. Prvé zhodné pravidlo vyhráva.
+/modely/ggml-kinit-parakeet-tdt-0.6b-v3-sk-q4_0.bin https://modely.dorotty.cloud/gymdict/ggml-kinit-parakeet-tdt-0.6b-v3-sk-q4_0.bin 302
+/modely/ggml-silero-v6.2.0.bin https://modely.dorotty.cloud/gymdict/ggml-silero-v6.2.0.bin 302
 /modely/* https://github.com/mirosv77/gymdict-modely/releases/download/v1/:splat 302
